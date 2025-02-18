@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><u>JOMACS MEMBERSHIP REGISTRATION</u></h1>
+    <div class="form-container">
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+            <br><br>
+            <label for="email">Email Addr:</label>
+            <input type="email" id="email" name="email" placeholder="iddrisu****@gmail.com" required>
+            <br><br>
+            <label for="phone">Phone #:</label>
+            <input type="number" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
+            <br><br>
+            <label for="dob">Birthday:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label for="Gender">Gender:</label>
+
+            <label for="Male">Male:</label>
+            <input type="radio" id="Male" value="Male" name="Gender">
+            <label for="Female">Female:</label>
+            <input type="radio" id="Female" value="Female" name="Gender">
+            <label for="Other">Other:</label>
+            <input type="radio" id="Other" value="Other" name="Gender">
+            <br><br>
+
+            <label for="addresss">Address:</label>
+            <input type="text" id="address" name="address" placeholder=" street, city, state, ZIP" required>
+            <br><br>
+            <label for="membership">Membership Type:</label>
+            <select name="membership" id="membership" required>
+                <option value="Select">--Select--</option>
+                <option value="regular">Regular</option>
+                <option value="associate">Associate</option>
+                <option value="visitor">Visitor</option>
+            </select><br><br>
+            <label for=""><input type="checkbox" name="newsletter" value="yes">Subscribe to our newsletter</label>
+
+
+
+        </fieldset>
+
+        <div class="button-container"><input type="submit" value="submit" class="btn submit-btn">
+        <input type="reset" value="Reset" class="btn reset-button">
+        </div>
+    </form>
+</div>
+</body>
+</html>
